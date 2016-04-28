@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Breakpoint test</title>
+		<script src="../lib/breakpoint.js"></script>
+		<script>
+			breakpoint('only screen and (min-width:500px)', {
+				first_enter: function () {
+					console.log('first enter');
+				},
+				enter: function () {
+					console.log('enter');
+				},
+				exit: function () {
+					console.log('exit');
+				}
+			})
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
